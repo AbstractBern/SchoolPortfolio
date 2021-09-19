@@ -1,0 +1,28 @@
+Bernardo Flores
+CS 3733 (Dr. Sam Silvestro)
+September 22, 2019
+Assignment 1: Process Creation and File Operations
+
+Program Status: Completed
+
+Design: 
+
+    "wordcount.c" program utilizes the libraries stdio.h, stdlib.h, string.h, errno.h,
+    and most importantly unistd.h.
+
+    wordcount.c contains pid_t variables that will be assigned a fork() function.
+    A loop is made for the number of files passed into the wordcount program. Within
+    the loop, a pid_t variable is assigned a fork(). The fork() assigned reaches a switch
+    case 0 that calls a word-counting function. Once done, the default case (parent process)
+    has orders to wait until the child processes are complete.
+
+Program Output:
+
+    Child process for File_1: number of words is 8
+    Child process for File_2: number of words is 13
+    Child process for File_3: number of words is 9
+    All 3 files have been counted!
+
+Assistance from others:
+    
+    Not Applicahble.
