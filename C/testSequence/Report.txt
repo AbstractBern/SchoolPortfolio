@@ -1,0 +1,14 @@
+Bernardo Flores
+Operating Systems
+December 12, 2019
+
+Assignment 3:
+
+Help: I did not have anyone help in the making of my code.
+
+I believe I did do everything right up to what I have.
+ALthough, I do not fully understand the address translation; However, this is ultimately my fault. In addition, the time I put in to this was minimal.
+
+part1.c takes in a parameter of : a file to be read, and a file to be written to - in that order.
+
+SO far, THe files are read and written to although; the address translation is missing.
