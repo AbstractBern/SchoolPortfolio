@@ -1,0 +1,14 @@
+Bernardo Flores
+Cs Operating System
+Assign5
+
+I did not get help from anyone.
+
+
+I think I went wrong at starting this assignment late. Very busy week.
+
+ALthough, I get the idea of this project, I cant implement the parts with the given time. It was hard for me to understand
+    do threads inside of threads.
+
+
+

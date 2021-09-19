@@ -1,0 +1,12 @@
+Bernardo Flores - vic398
+Assignment 1 - Process creation and File operations
+Due: Feb 15, 2018
+
+Collaborations: None.
+
+Correctness: 
+    I beleive this program is in its entirey correct for the assignment specifications.
+
+Description:
+
+Comments:No Comments

@@ -1,0 +1,21 @@
+
+Bernardo Flores
+CS 3733 OS
+Assign03
+4/8/2020
+
+1. Nobody helped me on this project.
+
+2. I believe I did project one correctly. ALthough, I must be missing something
+    on the second part I thnk I did the LRU incorrectly/ since the md5 sum is printing out
+    different from your examples.
+3. Challenges were finding where the program is implementing LRU incorrectly. I did not know how to 
+        count page faults. but I understand the process on paper.
+
+4. None;
+
+
+Here are the MD5sums for both parts of the program. I was not able to do the EC.
+
+ceabc02825a5b908e474b053074ab53c  part1-output.txt
+d18f2becdb3d4752d1cb4706e37d9da4  part2-output

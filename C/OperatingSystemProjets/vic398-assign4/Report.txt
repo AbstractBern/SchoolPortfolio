@@ -1,0 +1,15 @@
+Bernardo Flores
+CS 3733 Operating Systems
+Assign04
+4/18/2020
+1.  No one else worked on this assignment but me.
+
+
+2.I do not think i did this program completely well.
+    
+
+
+3. I did implement a slection sort function although I had more problem splitting making a thread for another half of the array. Most of the problem was figuring out how to pass parameters to a function in a pthread_create. Or maybe im just not understanding the entire concept when pthread create uses function calling.
+
+
+4. Be vocal about the many ways pthread can be used THe SGG book does not give too much info.

@@ -1,0 +1,21 @@
+Report File
+
+Bernardo Flores
+Operating Sys.
+January 22, 2020
+Assignment 0
+
+1. Collaborating Peers:
+    I did not collaborate with anyone besides my findings on the internet and my own suggestions.
+
+2. Correctness:
+    I beleive that this assignment does what it needs to do. However, the approach may be non-traditional a bit.
+3.    (if not)
+        **I did not use valgrind due to my time spent testing and finding workable solutions.
+        Additionally, I may have not done ReadFileLine appropriately.
+
+4.  Comments:
+    The challenges to this were not understanding C language, as a person who only studied C++; it is very difficult to grasp
+    what the functions and built in libraries what they are capable of.
+
+    I also understood more how to work my way around pointers and allocating data.

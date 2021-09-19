@@ -1,0 +1,16 @@
+Enter 1 of 2 digits: You entered: 20
+Enter 2 of 2 digits: You entered: 40
+
+Enter 1 of 2 doubles (ex: 24.00): You entered: 1.20
+
+Enter 2 of 2 doubles (ex: 24.00): You entered: 3.40
+
+Enter 1 of 2 lines: You entered: Youve been great
+
+
+Enter 2 of 2 lines: You entered: Weve been Megadeth
+
+Largest Int: 40
+Largest Double: 3.400000
+Largest String (18): Weve been Megadeth
+

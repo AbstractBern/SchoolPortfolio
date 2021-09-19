@@ -1,0 +1,35 @@
+Client waiting for SIGINT CTRL-C
+Socket created.
+Client-Server connected.
+Press (1) to Get GPA for a student.
+Press (2) to Stop: 
+Enter your abc123: 
+Client request: GETGPA hjl208
+Server Response: Heath Ledger hjl208 4.000000
+
+Client waiting for SIGINT CTRL-C
+Socket created.
+Client-Server connected.
+Press (1) to Get GPA for a student.
+Press (2) to Stop: Client waiting for SIGINT CTRL-C
+Socket created.
+Client-Server connected.
+Press (1) to Get GPA for a student.
+Press (2) to Stop: 
+Enter your abc123: 
+Client request: GETGPA vic398
+Server Response: Bernardo Flores vic398 2.500000
+
+Client waiting for SIGINT CTRL-C
+Socket created.
+Client-Server connected.
+Press (1) to Get GPA for a student.
+Press (2) to Stop: Client waiting for SIGINT CTRL-C
+Socket created.
+Client-Server connected.
+Press (1) to Get GPA for a student.
+Press (2) to Stop: 
+Enter your abc123: 
+Client request: GETGPA tkb989
+Server Response: Ted Bundy2.500000 tkb989 3.660000
+
