@@ -1,0 +1,13 @@
+Bernardo Flores
+Assignment 2: Process Scheduling
+
+Collaborators: Fred Barnett: (small)
+                    Discuss on how we should appoach bugs that we were 
+                    receiving from running process schedulers. In no way did we collaborate on code.
+                    Equal give and take in helping.
+
+Program Status: INCOMPLETE
+
+Suggestions: None.
+
+Program Output: Not Available
