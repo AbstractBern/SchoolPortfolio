@@ -1,32 +1,25 @@
 # bernardo flores
 # cosc1336, Lab 4 retry, reconsider
 # 12/16/2016
-# coputes austin weather statistics
-print('This program computes Austin weather statistics.')
-print('Enter temperatures -5 to 115.')
+# computes austin weather statistics
+print('This program computes Austin weather statistics.\nEnter temperatures from -5 to 115.')
+total, avg, freezing = 0,0,0
 answer = 'y'
 temperature = []
-total = 0
-avg = 0
-freezing= 0
-while answer.lower()=='y':
+while answer.lower() == 'y':
     temp = float(int(input('Enter a temperature: ')))
     while temp not in range(-5,116):
         print('Not valid Temperature Range. Try Again.')
         temp = float(int(input('Enter a temperature: ')))
-    if temp <= 32:
-        freezing+=1
-    total+=temp
+    if temp <= 32: freezing += 1
+    total += temp
     temperature.append(temp)
     counter = len(temperature)
     avg = total/counter
     answer = input('Again = "y", Stop = "qQ" or "quit": ')
-    if answer.lower()== 'y':
-        continue
-    elif answer in ('qQ' or 'quit'):
-        break
-    else:
-        quit()
+    if answer.lower() == 'y': continue
+    elif answer in ('qQ' or 'quit'): break
+    else: quit()
 print('Number of Temps Enter: ', counter)
 print('highest temperature: ', max(temperature))
 print('Lowest temperature: ', min(temperature))
