@@ -1,4 +1,26 @@
 #class program
+class Mammal:
+    def __init__(self, species):
+        self.__species = species
+    
+    def show_species(self):
+        print("I AM",self.__species)
+    def make_sound(self):
+        print("GRRR")
+class Dog(Mammal):
+    def __init__(self):
+        Mammal.__init__(self,'Dog')
+
+    def make_sound(self):
+        print("woof")
+
+mam = Mammal('regular mammal')
+mam.show_species()
+mam.make_sound()
+dog = Dog()
+dog.show_species()
+dog.make_sound()
+
 class Pet:
     def __init__(self,name,animal_type,age):
         self.__name = name
