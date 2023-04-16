@@ -1,20 +1,25 @@
-//BERNARDO FLORES
-//COMPLETE
-//This program asks the user for the month date and year. Then outputs in 3 formats, american, Europ. and numeric.
+/**
+ * @file Lab Assignment 4.cpp
+ * @author Bernardo Flores
+ * @brief Program asks user for month day and year. The output is in AM, EU, and Numeric.
+ * @version 0.1
+ * @date 2023-04-16
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #include <iostream>
 #include <string>
 #include <iomanip>
 using namespace std;
-//Date Class. For formatting Dates in Numeric, American, and European format
-//this class also converts int input to string output
+/* Date class formates dates in numeric, american, and european. Also has an int input to string output */
 class Date {
-	private:	//information the user does not need to see
-		int month,	//holds a input value for the Month to be converted to string
-			day,	//holds a input for the day to be converted to string
-			year;	//holds an input value for year to be converted to string.
+	// Only accessible thru this suite
+	private:
+		int month, day, year;		// assigned variables of data type int
 		string getMonthName(int month){	//this function gets the value for an int 1-12, and replaces the int with January-December. Can be called
-			string stringMonth;	//holds a string value that will be returned
-			switch(month) {	//switch statement for int to string conversion
+			string stringMonth;		//holds a string value that will be returned
+			switch(month) {			//switch statement for int to string conversion
 				case 1: stringMonth="January";
 						break;
 				case 2: stringMonth="February";
@@ -43,8 +48,9 @@ class Date {
 			}
 			return stringMonth;	//return value of string
 		}
-	public:		//information that can be used by the user
-		Date(){	//default constructor
+	// accessible by other functions
+	public:
+		Date() {
 			month=1;	//all three values are automaticall set depending if Date() is called
 			day=1;
 			year=2001;
@@ -52,7 +58,7 @@ class Date {
 		//setParameter holds the input values from user in this set up
 		//and decides whether or not the values inputted are valid months, days, and years.
 		void setParameter(int newMonth,int newDay,int newYear) {	// delete else and test return; on if....
-			if ((newMonth >= 1 && newMonth <= 12) && (newDay >= 1 && newDay <= 31) && (newYear >= 1950 && newYear <= 2020)) {
+			if ((newMonth >= 1 && newMonth <= 12) && (newDay >= 1 && newDay <= 31) && (newYear >= 1950 && newYear <= 4000)) {
 				month=newMonth;
 				day=newDay;
 				year=newYear;
