@@ -12,8 +12,7 @@ void TransactionPrompt(int, int, float, string);
 void PackageCountPrompt(int, int);
 
 //main function holds intitalizes data and makes a loop and also calls to functions for processing packages.
-int main()
-{
+int main() {
 	const int IND=2, INDEX=15;				//const subscript for dimension array
 	const double DIM_REQ=(12.0*3),			//dimension 3 feet requirement
 				GIRTH_REQ=(12.0*5),			//girth 5 feet requirement
@@ -32,44 +31,38 @@ int main()
 		weight;								//used to predetermine if the program should quit and if doesnt Pkgweight=weight for it to be passed on
 	cout<<fixed<<showpoint<<setprecision(2);
 	HelloPrompt();							//Service Name Prompt
-	while (weight != -1)					//loops for all transaction until weight or user enters -1
-	{
+	while (weight != -1) {					//loops for all transaction until weight or user enters -1
 		cout<<endl;
 		cout<<"Enter package weight (pounds) and 3 dimensions (inches): ";
 		cin>>weight;						//ask for weight to predetermine if the program should exit and drop to the Package Count
-		if (weight == -1)
-		{	break;	}				
+		if (weight == -1) {	break;	}				
 		cin>>dimension[0]>>dimension[1]>>dimension[2];
-		if ((dimension[0] <=0 || dimension[1] <=0 || dimension[2] <= 0) || (dimension[0] > DIM_REQ || dimension[1] > DIM_REQ || dimension[2] > DIM_REQ))
-		{
+		if ((dimension[0] <=0 || dimension[1] <=0 || dimension[2] <= 0) || (dimension[0] > DIM_REQ || dimension[1] > DIM_REQ || dimension[2] > DIM_REQ)) {
 			ErrorPrompt();					//used to call error message if the requirements ^above are met
 			continue;
 		}
 		PkgWeight=weight;					//passes weight to PgWeight
-		for (int i=0; i<IND; i++)			//this loop determines what the largestDimension will be according to the array of Dimension
-		{
+		for (int i=0; i<IND; i++) {			//this loop determines what the largestDimension will be according to the array of Dimension
 			if (dimension[i] > dimension[0])
 			{	largestDim=dimension[i];	}
 			else if (dimension[0] > dimension[i])
 			{	largestDim=dimension[0];	}
 		}
 		girth = 2 * (dimension[0]+dimension[1]+dimension[2]-largestDim);	//sets girth according to information given
-		if (girth > GIRTH_REQ)				//decides if Pkg status should increment Rejected 
-		{	PkgStatus="Rejected";			//and give PjgStatus "rejected" string
+		if (girth > GIRTH_REQ) {				//decides if Pkg status should increment Rejected 
+			PkgStatus="Rejected";			//and give PjgStatus "rejected" string
 			Rejected+=1;
 		}
-		if (girth < GIRTH_REQ)				//decides if PkgStatus should be given string "accepted"
-		{	PkgStatus="Accepted";			//and increment accepted
+		if (girth < GIRTH_REQ) {				//decides if PkgStatus should be given string "accepted"
+			PkgStatus="Accepted";			//and increment accepted
 			Accepted+=1;
 		}
-		for (int i=0; i<INDEX; i++)			//loop decides what the PkgCost should be determined by the Charge and Pound Array
-		{									//Parallel Array
-			if  (weight > Pounds[i] && weight <= Pounds[i+1])
-			{
+		for (int i=0; i<INDEX; i++) {			//loop decides what the PkgCost should be determined by the Charge and Pound Array
+			//Parallel Array
+			if  (weight > Pounds[i] && weight <= Pounds[i+1]) {
 				PkgCost=Charge[i+1];
 			}
-			else if (weight==Pounds[i])
-			{
+			else if (weight==Pounds[i]) {
 				PkgCost=Charge[i];
 			}
 		}
@@ -81,21 +74,18 @@ int main()
 	return 0;
 }
 //this function is for welcoming prompt
-void HelloPrompt()							
-{
+void HelloPrompt() {
 	cout<<setw(50)<<"Lone Star Package Servicing"<<endl;
 	cout<<"For each transation, enter package weight and 3 dimensions (seperate by space). or -1 to quit";
 }
 //this function prints an error message
-void ErrorPrompt()							
-{
+void ErrorPrompt() {
 	cout<<endl;
 	cout<<setw(50)<<"ERROR! : Entries need be less than 0. Pounds < 50 and Dimensions less than 36 inches."<<endl;
 	cout<<setw(50)<<"Please re-enter transaction."<<endl;
 }
 //Tihs function prints out the information given
-void TransactionPrompt(int tCount, int PkgWeight, float PkgCost, string PkgStatus)	
-{
+void TransactionPrompt(int tCount, int PkgWeight, float PkgCost, string PkgStatus) {
 	cout<<endl;
 	cout<<setw(50)<<"Transaction: "<< tCount <<endl;
 	cout<<setw(50)<<"Status: " << PkgStatus <<endl;
@@ -103,8 +93,7 @@ void TransactionPrompt(int tCount, int PkgWeight, float PkgCost, string PkgStatu
 	cout<<setw(50)<<"Cost: "<< PkgCost <<endl;	
 }
 //this function prints out accepted and rejected packages
-void PackageCountPrompt(int Accepted, int Rejected)
-{
+void PackageCountPrompt(int Accepted, int Rejected) {
 	cout<<endl;
 	cout<<setw(50)<<"Number of accepted packages: "<< Accepted <<endl;
 	cout<<setw(50)<<"Number of rejected packages: "<< Rejected <<endl;

@@ -9,8 +9,7 @@
 #include <iomanip>
 #include <string>
 using namespace std;
-struct StudentGrade
-{
+struct StudentGrade {
 	string Name;
 	int Score;
 };
@@ -20,8 +19,8 @@ void SortArray(StudentGrade *room, int);				//prototype for sorting array of str
 float AverageOfClass(StudentGrade *room, int, float&);	//prototype for Averaging the pointer with array of struct
 void DisplayInfo(const StudentGrade *room, int, float);	//Prototype for displaying information of pointer
 														
-int main()									//Main function declares: necessary data types, such as student, average, and pointer to StudentGrade array.
-{											//Additionally calls all 5 functions for program to work
+int main() {									//Main function declares: necessary data types, such as student, average, and pointer to StudentGrade array.
+											//Additionally calls all 5 functions for program to work
 	int STUDENTS;							//holds integer reference for amount of STUDENTS needed to be average
 	float Average;							//holds float reference for Average operation of all students scores
 	cout<<fixed<<showpoint;					//formatting
@@ -37,8 +36,8 @@ int main()									//Main function declares: necessary data types, such as stude
 	cout<<"Have fun in class!";
 	return 0;
 }
-int SizeDeclaration(int &STUDENTS)						//SizeDeclaration function asks for the amount of students needed to be graded
-{														//and returns the STUDENT for a element size by reference
+int SizeDeclaration(int &STUDENTS) {						//SizeDeclaration function asks for the amount of students needed to be graded
+														//and returns the STUDENT for a element size by reference
 	cout<<"How many students will you be grading? ";
 	cin>>STUDENTS;
 	while (STUDENTS < 0 && STUDENTS > 105)				//loops if only the numbers are not in range until a number is valid
