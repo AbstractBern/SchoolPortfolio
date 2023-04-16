@@ -7,17 +7,14 @@
 using namespace std;
 //Date Class. For formatting Dates in Numeric, American, and European format
 //this class also converts int input to string output
-class Date
-{
+class Date {
 	private:	//information the user does not need to see
 		int month,	//holds a input value for the Month to be converted to string
 			day,	//holds a input for the day to be converted to string
 			year;	//holds an input value for year to be converted to string.
-		string getMonthName(int month)	//this function gets the value for an int 1-12, and replaces the int with January-December. Can be called
-		{
+		string getMonthName(int month){	//this function gets the value for an int 1-12, and replaces the int with January-December. Can be called
 			string stringMonth;	//holds a string value that will be returned
-			switch(month)	//switch statement for int to string conversion
-			{
+			switch(month) {	//switch statement for int to string conversion
 				case 1: stringMonth="January";
 						break;
 				case 2: stringMonth="February";
@@ -47,50 +44,42 @@ class Date
 			return stringMonth;	//return value of string
 		}
 	public:		//information that can be used by the user
-		Date()	//default constructor
-		{
+		Date(){	//default constructor
 			month=1;	//all three values are automaticall set depending if Date() is called
 			day=1;
 			year=2001;
 		}
 		//setParameter holds the input values from user in this set up
 		//and decides whether or not the values inputted are valid months, days, and years.
-		void setParameter(int newMonth,int newDay,int newYear)	// delete else and test return; on if....
-		{
-			if ((newMonth >= 1 && newMonth <= 12) && (newDay >= 1 && newDay <= 31) && (newYear >= 1950 && newYear <= 2020))
-			{
+		void setParameter(int newMonth,int newDay,int newYear) {	// delete else and test return; on if....
+			if ((newMonth >= 1 && newMonth <= 12) && (newDay >= 1 && newDay <= 31) && (newYear >= 1950 && newYear <= 2020)) {
 				month=newMonth;
 				day=newDay;
 				year=newYear;
 			}
-			else
-			{
+			else {
 				cout<<fixed<<setprecision(1);
 				cout<< left << setw(25) << "ONE ENTRY IS BAD!\t";
 				return;
 			}
 		}
 		//formats for numeric with prompt
-		void Numeric_Format()
-		{
+		void Numeric_Format() {
 			cout<< month <<"/"<< day << "/" << year;
 		}
 		//formats for american with prompt, calls getMonthName for conversion
-		void American_Format()
-		{
+		void American_Format() {
 			cout<< getMonthName(month) << " " << day << ", " << year;
 		}
 		//swapped formatting for day and month with prompt, calls on getMonthName for conversion.
-		void European_Format()
-		{
+		void European_Format() {
 			cout<< day << " " << getMonthName(month) << " " << year;
 		}
 		
 
 };
 //int main is used by users. input and outputs Plus, class setup and calls.
-int main()
-{
+int main(){
 	int month,	//holds month values for user
 		day,	//holds day values input by user
 		year;	//holds year value input by user
@@ -126,7 +115,6 @@ int main()
 	secondObj.American_Format();	//calls american function
 	cout<<"\n\n";
 	cout<< right << setw(35) << "European Format: "; 
-	thirdObj.European_Format();		//calls european format fuction
-	
+	thirdObj.European_Format();		//calls european format fuction	
 	return 0;
 }
